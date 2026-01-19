@@ -35,4 +35,12 @@ for numero in {1..30}; do
     echo "alumno$1_$numero"
 done
 }
-alumnos "1eso"
+
+niveles() {
+niveles=("1eso" "2eso" "3eso" "4eso")
+for nivel in "${niveles[@]}"; do
+  echo "nivel: $nivel"
+alumnos "$nivel"
+done
+}
+niveles
