@@ -29,3 +29,10 @@ done
 2eso
 3eso
 4eso
+
+alumnos() {
+for numero in {1..30}; do
+    echo "alumno$1_$numero"
+done
+}
+alumnos "1eso"
