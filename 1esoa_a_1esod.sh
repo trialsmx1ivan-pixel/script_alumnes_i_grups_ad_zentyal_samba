@@ -36,11 +36,35 @@ for numero in {1..30}; do
 done
 }
 
-niveles() {
-niveles=("1eso" "2eso" "3eso" "4eso")
+niveles_1eso() {
+niveles=("1esoA" "1esoB" "1esoC" "1esoD")
 for nivel in "${niveles[@]}"; do
-  echo "nivel: $nivel"
+#  echo "nivel: $nivel"
 alumnos "$nivel"
 done
 }
-niveles
+niveles_1eso
+niveles_2eso() {
+niveles=( "2esoB" "2esoC" "2esoD")
+for nivel in "${niveles[@]}"; do
+#  echo "nivel: $nivel"
+alumnos "$nivel"
+done
+}
+niveles_2eso
+niveles_3eso() {
+niveles=("3esoA" "3esoB" "3esoC" "3esoD")
+for nivel in "${niveles[@]}"; do
+#  echo "nivel: $nivel"
+alumnos "$nivel"
+done
+}
+niveles_3eso
+niveles_4eso() {
+niveles=("4esoA" "4esoB" "4esoC" "4esoD")
+for nivel in "${niveles[@]}"; do
+#  echo "nivel: $nivel"
+alumnos "$nivel"
+done
+}
+niveles_4eso
